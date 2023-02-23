@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono&family=Space+Mono&family=Tilt+Warp&display=swap" rel="stylesheet">
+    <meta name="keywords" content="Aidan, Aidan Gunawardhana, Singapore Polytechnic, Computer Engineer, Aidan G">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <meta name="author" content ="Aidan G">
+
+<body>
+     
+    
+    <img id=coding src="images/coding.gif"/>
+    <p id="AG">AG</p>
+    <h1 id="typewriter"></h1>
+    <div id="text">
+        <p id="paragraph">I'm a computer engineering student that's only in it for the money </p1>
+        <p id="languages">Languages I barely know:</p>
+        <img id="js" src="images/js - Copy.png"/>
+        <img id=css src="images/css-3.png"/>
+        <img id=html src="images/html-5 (3).png" />
+        <img id=css src="images/c-.png"/>
+
+        <p id="socials">Socials</p>
+        <a href="https://github.com/AidanG-05" target=_blank>
+            <img id=github src="images/github.png"/>
+        </a>
+        <a href="mailto:aidan.v.guna@gmail.com" target=_blank>
+            <img id=gmail src="images/gmail (1).png"/>
+        </a>
+        
+        
+        <script>
+            const text = "Bonjour, I'm Aidan";
+            
+            let i = 0;
+            function typeWriter() {
+              if (i < text.length) {
+                document.getElementById("typewriter").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 120); // adjust the delay between each letter here
+              }
+            }
+            typeWriter();
+            </script>
+
+       
+        
+</body>
+</html>
