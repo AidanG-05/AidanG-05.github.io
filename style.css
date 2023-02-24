@@ -8,7 +8,7 @@ body {
 h1 {
     font-family:"Press Start 2P";
     text-align:center;
-    margin-top: 100px;
+    margin-top: 150px;
     color:antiquewhite;
     
 }
@@ -72,19 +72,29 @@ text-align:center;
 #coding {
     width: 50px;
     border-radius: 100%;
-    position:fixed;
-    top: 15px;
-    right: 15px;;
+    position:absolute;
+    top: 5px;
+    right: 0px;
 }
 
 #AG {
     color:wheat;
-    position: fixed;
-    top:0;
-    left: 25px;
+
     font-family:"Space Mono";
-    font-size: 30px;
+    font-size: 35px;
+    position:absolute;
+    margin:0;
+    left:15px;
 }
 
+#box {
+    border: 1px solid;
+    height: 50px;
+    width:100%;
+    background-color:black;
+    top: 0;
+    right:10px;
+    position:fixed
+}
   
   
