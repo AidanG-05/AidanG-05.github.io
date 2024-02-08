@@ -49,6 +49,4 @@
 <b style="font-size: large;">-Get PID, Nice, and Command of the Nice Jobs:</b>
 <p>ps -eo pid,nice,cmd | grep "command1\|command2\|command3"</p>
 <b style="font-size: large;">-Renice All 2 Nice Levels:</b>
-<p>renice 5 -p $(pgrep command1)</p>
-<p>renice 10 -p $(pgrep command2)</p>
-<p>renice 15 -p $(pgrep command3)</p>
+<p>pgrep command1 command2 command3 | xargs -n1 renice 5 10 15</p>
