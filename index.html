@@ -43,9 +43,13 @@
 <p>atq</p>
 <h4 style="font-size: 30px;">Last Section</h4>
 <b style="font-size: large;">-Run 3 Nice Jobs with Custom Nice Levels:</b>
-<p>nice -n 10 command1 &</p>
-<p>nice -n 15 command2 &</p>
-<p>nice -n 20 command3 &</p>
+<p>for ((i=0; i<${#commands[@]}; i++)); do
+
+    nice -n ${nice_levels[i]} ${commands[i]} &
+done
+
+
+wait</p>
 <b style="font-size: large;">-Get PID, Nice, and Command of the Nice Jobs:</b>
 <p>ps -eo pid,nice,cmd | grep "command1\|command2\|command3"</p>
 <b style="font-size: large;">-Renice All 2 Nice Levels:</b>
