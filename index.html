@@ -43,10 +43,10 @@
 <p>atq</p>
 <h4 style="font-size: 30px;">Last Section</h4>
 <b style="font-size: large;">-Run 3 Nice Jobs with Custom Nice Levels:</b>
-<p>for ((i=0; i<${#commands[@]}; i++)); do
+<p>for ((i=0; i<${#commands[@]}; i++)); do <br>
 
-    nice -n ${nice_levels[i]} ${commands[i]} &
-done
+    nice -n ${nice_levels[i]} ${commands[i]} & <br>
+done  <br>
 
 
 wait</p>
